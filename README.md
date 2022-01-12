@@ -1,2 +1,2 @@
 # DataStructures
-cosc520 advanced data structures
+ubco cosc520 advanced data structures
