@@ -1,0 +1,144 @@
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<h1>The login checker problem</h1>
+
+<p>The objective of the assignment is to: (1) review hash tables, (2) explore advanced data structures, and (3) numerically compare 2 algorithms. 
+
+<p>The login checker problem is to quickly check that a login name has not been already taken so that all logins are unique. Assume you have millions of logins (aka usernames), and a user creates a new account. You need to ensure the new login is not a duplicate of an existing one. Using your existing knowledge of algorithms and data structures you can
+<ol>
+    <li>store all logins in a list, and check existence using linear search;
+    <li>store all logins in a sorted array, and check existence using binary search;
+    <li>store logins in a hash table, and check existence by hashing.
+</ol>
+
+The assignment explores 2 more advanced data structures that scale better than the above. Assume the number of logins is n=1 billion (you may use a smaller value of n depending on your computer memory and speed as long as you justify the value of n used to validate your approach).
+
+<ul>
+    <li> Read about <a href="https://www.geeksforgeeks.org/bloom-filters-introduction-and-python-implementation/">bloom filters</a> and look at <a href="https://llimllib.github.io/bloomfilter-tutorial/">examples</a>.
+    <li> Read about <a href="https://en.wikipedia.org/wiki/Cuckoo_filter">Cuckoo filters</a> and how they <a href="https://bdupras.github.io/filter-tutorial/"> compare </a> to Bloom filters.
+</ul>
+
+<h2>Submission</h2>
+To complete the assignment, submit the following:
+<ol>
+<li> A concise pdf file listing the time and space computational complexity of: linear search, binary search, hashing, Bloom filter, Cuckoo filter. Use appropriate parameters to describe the complexity, e.g. Bloom filter uses n (estimated number of elements/logins), m (bit array of m bits), and k (number of hash functions). You do not need to justify the complexity; only to explain each parameters used and provide the formula with appropriate references.
+<li> MATLAB code comparing the hashing, Bloom filter, and Cuckoo filter. Your code should
+    <ul>
+        <li> take advantage of MATLAB Object-Oriented language features
+        <li> use MATLAB unit testing framework based on <a href="https://www.mathworks.com/help/matlab/matlab_prog/write-simple-test-case-using-classes.html">Write Simple Test Case Using Classes</a> 
+        <li> use MATLAB CodeCoveragePlugin class to generate a coverage report, see <a href="https://www.mathworks.com/help/matlab/ref/matlab.unittest.plugins.codecoverageplugin-class.html">CodeCoverage pluging</a>. Alternatively you can generate the coverage report using MATLAB profiler, see <a href="https://www.mathworks.com/help/matlab/matlab_prog/determining-profiler-coverage.html">Determine Code Coverage Using the Profiler<a> (however, this is a manual process so everytime you need to regenerate the report, it requires several mouse clicks).
+        <li> follow common practises: 
+            <ul>
+                <li>appropriate class/variable/method names (not too long and meaningful), 
+                <li>appropriate comments using MATLAB, see <a href="https://www.mathworks.com/help/matlab/matlab_prog/add-help-for-your-program.html">Add Help for Your Program</a>
+                <li>comments for each method should indicate input, output, and a short explanation of the method
+                <li>clear setup and running instructions.
+            </ul>
+            An example of acceptable practises is the <a href="https://github.com/ylucet/CCA2">MATLAB code for the CCA2</a> numerical library.
+    </ul>
+</ol>
+
+<p>Submit your .zip file to Canvas.
+
+<h2>Grading rubric</h2>
+<table border="1">
+<tbody>
+<tr>
+<td width="183">&nbsp;</td>
+<td style="text-align: center;" width="72"><strong>Weights</strong></td>
+<td style="text-align: center;" width="72"><strong>Subtotals</strong></td>
+</tr>
+<tr>
+<td><strong>Report</strong></td>
+<td style="text-align: right;">&nbsp;</td>
+<td style="text-align: right;">0.1</td>
+</tr>
+<tr>
+<td style="text-align: right;">Complexity</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align: right;">References</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td style="text-align: right;">&nbsp;</td>
+<td style="text-align: right;">&nbsp;</td>
+</tr>
+<tr>
+<td><strong>Code static</strong></td>
+<td style="text-align: right;">&nbsp;</td>
+<td style="text-align: right;">0.4</td>
+</tr>
+<tr>
+<td style="text-align: right;">naming</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align: right;">comments</td>
+<td style="text-align: right;">0.10</td>
+<td style="text-align: right;">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align: right;">running instructions</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align: right;">code design</td>
+<td style="text-align: right;">0.20</td>
+<td style="text-align: right;">&nbsp;</td>
+</tr>
+<tr>
+<td><strong>Code execution</strong></td>
+<td style="text-align: right;">&nbsp;</td>
+<td style="text-align: right;">0.5</td>
+</tr>
+<tr>
+<td style="text-align: right;">syntax-error free, runs</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align: right;">unit tests run</td>
+<td style="text-align: right;">0.15</td>
+<td style="text-align: right;">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align: right;">coverage testing above 80%</td>
+<td style="text-align: right;">0.10</td>
+<td style="text-align: right;">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align: right;">convincing demo</td>
+<td style="text-align: right;">0.10</td>
+<td style="text-align: right;">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align: right;">performance</td>
+<td style="text-align: right;">0.10</td>
+<td style="text-align: right;">&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td style="text-align: right;">&nbsp;</td>
+<td style="text-align: right;">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>Total</strong></td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.0</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Bonus</h2>
+    <ol>
+        <li>Suggest an alternative competitive method; explain its data structure, how it works, and its complexity with appropriate reference [15% bonus]
+        <li>Discuss your alternative method with the instructor, and if the instructor considers your method competitive, implement it and benchmark it vs. Bloom and Cuckoo [15% bonus]
+    </ol>

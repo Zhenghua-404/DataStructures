@@ -1,0 +1,12 @@
+estimate the number of buckets in hash table:
+https://cseweb.ucsd.edu/~kube/cls/100/Lectures/lec16/lec16-8.html
+
+hashing function for strings：
+https://algs4.cs.princeton.edu/34hash/
+
+bloom filters
+https://en.wikipedia.org/wiki/Bloom_filter#Cache_filtering
+
+Cuckoo filters
+https://web.stanford.edu/class/archive/cs/cs166/cs166.1146/lectures/13/Small13.pdf
+https://www.tutorialcup.com/interview/hashing/cuckoo-hashing.htm
