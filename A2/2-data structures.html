@@ -1,0 +1,127 @@
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<h1>Advanced Data Structures</h1>
+
+<p>The objective of the assignment is to: (1) explore advanced data structures, and (2) benchmark algorithms. 
+
+<p>Consider the list of advanced data structures provided at <a href="https://iq.opengenus.org/list-of-advanced-data-structures/"> https://iq.opengenus.org/list-of-advanced-data-structures/</a> and at <a href="https://en.wikipedia.org/wiki/List_of_data_structures">https://en.wikipedia.org/wiki/List_of_data_structures</a>. Select 3 comparable data structures.
+
+<h2>Submission</h2>
+To complete the assignment, submit the following:
+<ol>
+<li> A concise pdf report including 
+    <ul>
+        <li>the time and space computational complexity of your data structures, 
+        <li>a table summarizing the measured performance, 
+        <li>a performance profile plot (see below),
+        <li>comments on whether the switching phenomenom occurs in your performance profile (see performance profile limitation below),
+        <li>an explantions of why you selected those data structures (what attracted them; this is totally subjective and personal).         
+    </ul>
+    Use appropriate parameters to describe the complexity, e.g. Bloom filter uses n (estimated number of elements/logins), m (bit array of m bits), and k (number of hash functions). You do not need to justify the complexity; only to explain each parameters used and provide the formula with appropriate references.
+<li> MATLAB code comparing the data structures selected. Because there are more than 2 data structures, read about performance profiles <a href="https://link.springer.com/article/10.1007/s101070100263">definition</a>, <a href="https://www.numerical.rl.ac.uk/people/j_scott/publications/2016/GouldScott.2016_TOMS.pdf">limitations</a>, and <a href="http://www.argmin.net/2018/03/26/performance-profiles/">application to machine learning</a>. MATLAB code for creating profiles is available in the provided perf.m file. You are responsible for generating appropriate data sets for the performance profile. Provide any justification of your choices in the report. Do not hesitate to contact the instructor (a quick email can save you hours for misguided work!).
+
+    <p>As for Assignment 1, your code should
+    <ul>
+        <li> take advantage of MATLAB Object-Oriented language features
+        <li> use MATLAB unit testing framework based on <a href="https://www.mathworks.com/help/matlab/matlab_prog/write-simple-test-case-using-classes.html">Write Simple Test Case Using Classes</a> 
+        <li> use MATLAB CodeCoveragePlugin class to generate a coverage report, see <a href="https://www.mathworks.com/help/matlab/ref/matlab.unittest.plugins.codecoverageplugin-class.html">CodeCoverage pluging</a>. Alternatively you can generate the coverage report using MATLAB profiler, see <a href="https://www.mathworks.com/help/matlab/ref/matlab.unittest.plugins.codecoverageplugin-class.html">Determine Code Coverage Using the Profiler<a> (however, this is a manual process so everytime you need to regenerate the report, it requires several mouse clicks).
+        <li> follow common practises: 
+            <ul>
+                <li>appropriate class/variable/method names (not too long and meaningful), 
+                <li>appropriate comments using MATLAB, see <a href="https://www.mathworks.com/help/matlab/matlab_prog/add-help-for-your-program.html">Add Help for Your Program</a>
+                <li>comments for each method should indicate input, output, and a short explanation of the method
+                <li>clear setup and running instructions.
+            </ul>
+            An example of acceptable practises is the <a href="https://github.com/ylucet/CCA2">MATLAB code for the CCA2</a> numerical library.
+    </ul>
+    
+</ol>
+
+<p>Submit your .zip file to Canvas.
+
+<h2>Grading rubric</h2>
+<table border="1">
+<tbody>
+<tr style="height: 18px;">
+<td style="height: 18px; width: 202.234px;">&nbsp;</td>
+<td style="height: 18px; width: 64.3281px;"><strong>Weights</strong></td>
+<td style="height: 18px; width: 74.5312px;"><strong>Subtotals</strong></td>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px; width: 202.234px;"><strong>Report</strong></td>
+<td style="text-align: right; height: 18px; width: 64.3281px;">&nbsp;</td>
+<td style="text-align: right; height: 18px; width: 74.5312px;">0.25</td>
+</tr>
+<tr style="height: 18px;">
+<td style="text-align: right; height: 18px; width: 202.234px;">Complexity</td>
+<td style="text-align: right; height: 18px; width: 64.3281px;">0.05</td>
+<td style="text-align: right; height: 18px; width: 74.5312px;">&nbsp;</td>
+</tr>
+<tr style="height: 18px;">
+<td style="text-align: right; height: 18px; width: 202.234px;">Justification</td>
+<td style="text-align: right; height: 18px; width: 64.3281px;">0.05</td>
+<td style="text-align: right; height: 18px; width: 74.5312px;">&nbsp;</td>
+</tr>
+<tr style="height: 18px;">
+<td style="text-align: right; height: 18px; width: 202.234px;">performance profile</td>
+<td style="text-align: right; height: 18px; width: 64.3281px;">0.15</td>
+<td style="text-align: right; height: 18px; width: 74.5312px;">&nbsp;</td>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px; width: 202.234px;"><strong>Code static</strong></td>
+<td style="text-align: right; height: 18px; width: 64.3281px;">&nbsp;</td>
+<td style="text-align: right; height: 18px; width: 74.5312px;">0.25</td>
+</tr>
+<tr style="height: 36px;">
+<td style="text-align: right; height: 36px; width: 202.234px;">naming+comments+running instructions</td>
+<td style="text-align: right; height: 36px; width: 64.3281px;">0.10</td>
+<td style="text-align: right; height: 36px; width: 74.5312px;">&nbsp;</td>
+</tr>
+<tr style="height: 18px;">
+<td style="text-align: right; height: 18px; width: 202.234px;">code design</td>
+<td style="text-align: right; height: 18px; width: 64.3281px;">0.15</td>
+<td style="text-align: right; height: 18px; width: 74.5312px;">&nbsp;</td>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px; width: 202.234px;"><strong>Code execution</strong></td>
+<td style="text-align: right; height: 18px; width: 64.3281px;">&nbsp;</td>
+<td style="text-align: right; height: 18px; width: 74.5312px;">0.5</td>
+</tr>
+<tr style="height: 18px;">
+<td style="text-align: right; height: 18px; width: 202.234px;">syntax-error free, runs</td>
+<td style="text-align: right; height: 18px; width: 64.3281px;">0.05</td>
+<td style="text-align: right; height: 18px; width: 74.5312px;">&nbsp;</td>
+</tr>
+<tr style="height: 18px;">
+<td style="text-align: right; height: 18px; width: 202.234px;">unit tests run</td>
+<td style="text-align: right; height: 18px; width: 64.3281px;">0.15</td>
+<td style="text-align: right; height: 18px; width: 74.5312px;">&nbsp;</td>
+</tr>
+<tr style="height: 18px;">
+<td style="text-align: right; height: 18px; width: 202.234px;">coverage testing above 80%</td>
+<td style="text-align: right; height: 18px; width: 64.3281px;">0.10</td>
+<td style="text-align: right; height: 18px; width: 74.5312px;">&nbsp;</td>
+</tr>
+<tr style="height: 18px;">
+<td style="text-align: right; height: 18px; width: 202.234px;">convincing demo</td>
+<td style="text-align: right; height: 18px; width: 64.3281px;">0.10</td>
+<td style="text-align: right; height: 18px; width: 74.5312px;">&nbsp;</td>
+</tr>
+<tr style="height: 18px;">
+<td style="text-align: right; height: 18px; width: 202.234px;">performance</td>
+<td style="text-align: right; height: 18px; width: 64.3281px;">0.10</td>
+<td style="text-align: right; height: 18px; width: 74.5312px;">&nbsp;</td>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px; width: 202.234px;">&nbsp;</td>
+<td style="text-align: right; height: 18px; width: 64.3281px;">&nbsp;</td>
+<td style="text-align: right; height: 18px; width: 74.5312px;">&nbsp;</td>
+</tr>
+<tr style="height: 18px;">
+<td style="text-align: right; height: 18px; width: 202.234px;"><strong>Total</strong></td>
+<td style="text-align: right; height: 18px; width: 64.3281px;">1.00</td>
+<td style="text-align: right; height: 18px; width: 74.5312px;">1.0</td>
+</tr>
+</tbody>
+</table>

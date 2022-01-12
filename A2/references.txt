@@ -1,0 +1,13 @@
+Sorted Linked lIst:
+https://www.geeksforgeeks.org/insertion-sort-for-singly-linked-list/
+
+Skiplist:
+https://www.geeksforgeeks.org/skip-list-set-2-insertion/
+
+BST：
+https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/
+
+profile:
+https://www.mathworks.com/help/matlab/ref/profile.html
+https://arxiv.org/pdf/1709.08242.pdf
+https://www.numerical.rl.ac.uk/people/j_scott/publications/2016/GouldScott.2016_TOMS.pdf
